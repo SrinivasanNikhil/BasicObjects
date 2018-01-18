@@ -1,6 +1,22 @@
 Tasks for me:
 
 a. show them ticketmachine and the printticket method
+
 b. build ticket printer and have them declare and instantiate ticketmachine in ticket printer
-c. talk about methods from one class being accesible to anotehr public methods, use of a method without knowing its actual working
-d. 
+
+c. talk about methods from one class being accesible to anotehr public methods, use of a method without knowing
+   its actual working, oven example, show ticket printer calling ticket machine
+
+d. initialize some local variables in main method in ticket printer
+
+e. show values of variables changing
+
+f. no reserved words for variables
+
+g. accessor and mutator methods
+	accessor methods returning information, differece between returning information and printing information
+	void vs data type returned
+	mutator methods changing information, how that works, can be based on some input, methods can take inputs
+	
+	
+h. Constructor, constructing objects
