@@ -44,15 +44,17 @@ public class TicketPrinter {
 	 */
 	public static void main(String[] args) {
 	
-		int price = 10;
-		int collections = 0;
-		int nosPrinted = 0;
+		int price = 10; //moved to the machine
+		int collections = 0; //left at the printer
+		int nosPrinted = 0; // left at the printer
 		
 
 		TicketMachine tm = new TicketMachine(); //new keyword allows for an object to be made of a specific type
 		tm.printTicket();
-		
+		nosPrinted += 1;
 		collections = collections + price;
+		
+		
 		
 
 	}
