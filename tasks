@@ -13,10 +13,12 @@ e. show values of variables changing
 
 f. no reserved words for variables
 
-g. accessor and mutator methods
+g. talk to them abotu object shaving attributes, show them attributes of a ticket machine, splitting up of functions, what should a ticket machine know vs what should the printer know
+
+h. accessor and mutator methods
 	accessor methods returning information, differece between returning information and printing information
 	void vs data type returned
 	mutator methods changing information, how that works, can be based on some input, methods can take inputs
 	
 	
-h. Constructor, constructing objects
+i. Constructor, constructing objects
