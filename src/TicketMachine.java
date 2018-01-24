@@ -5,16 +5,13 @@ public class TicketMachine {
 	 * Have students add a destination
 	 */
 	String destination;
+	int collections;
 	
 	public TicketMachine()
 	{
-		
-	}
-	
-	public TicketMachine(int cost)
-	{
-		price = cost;
-		
+		price = 10;
+		destination = "PeachTree";
+		collections = 0;
 	}
 	
 	/**
@@ -31,10 +28,17 @@ public class TicketMachine {
 	public void printTicket() {
 		System.out.println("***************************");
 		System.out.println("******* MARTA Ticket ******");
-		//System.out.println("**** Ticket price: " + price +" *****");
+		System.out.println("**** Ticket price: " + price +" *****");
 		System.out.println("******** Red Line *********");
-		//System.out.println("****** To " + destination + "*******");
+		System.out.println("****** To " + destination + "*******");
 		System.out.println("***************************");
+		
+		collections = collections + price;
+	}
+	
+	public void printCollections()
+	{
+		System.out.println("Money collected : " + collections);
 	}
 	
 	public void setPrice(int cost)
@@ -55,8 +59,8 @@ public class TicketMachine {
 		return destination;
 	}
 
-	public void setDestination(String destination) {
-		this.destination = destination;
+	public void setDestination(String dest) {
+		destination = dest;
 	}
 	
 	

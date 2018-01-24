@@ -22,8 +22,8 @@ public class Stock {
 	/**
 	 * @param stockName the stockName to set
 	 */
-	public void setStockName(String stockName) {
-		this.stockName = stockName;
+	public void setStockName(String pStockName) {
+		stockName = pStockName;
 	}
 
 	/**
@@ -36,8 +36,8 @@ public class Stock {
 	/**
 	 * @param numberOfShares the numberOfShares to set
 	 */
-	public void setNumberOfShares(int numberOfShares) {
-		this.numberOfShares = numberOfShares;
+	public void setNumberOfShares(int pNumberOfShares) {
+		numberOfShares = pNumberOfShares;
 	}
 
 	/**
@@ -50,11 +50,28 @@ public class Stock {
 	/**
 	 * @param priceOfShare the priceOfShare to set
 	 */
-	public void setPriceOfShare(double priceOfShare) {
-		this.priceOfShare = priceOfShare;
+	public void setPriceOfShare(double pPriceOfShare) {
+		priceOfShare = pPriceOfShare;
 	}
 	
+	/**
+	 * Have students calculate value of stock
+	 * @return
+	 */
+	public double calculateStockValue()
+	{
+		return priceOfShare * numberOfShares;
+		
+	}
 	
-	
+	/**
+	 * Have the students print out the information of the stock
+	 */
+	public void printInfo()
+	{
+		System.out.println("Stock Ticker: " + stockName);
+		System.out.println("Stock Quantity: " + numberOfShares);
+		System.out.println("Stock Price: " + priceOfShare);
+	}
 
 }

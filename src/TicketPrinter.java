@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class TicketPrinter {
 
@@ -44,15 +45,36 @@ public class TicketPrinter {
 	 */
 	public static void main(String[] args) {
 	
-		int price = 10; //moved to the machine
-		int collections = 0; //left at the printer
-		int nosPrinted = 0; // left at the printer
+	//	int price = 10; //moved to the machine
+	//	int collections = 0; //moved 
+	//	int nosPrinted = 0; // moved 
 		
 
 		TicketMachine tm = new TicketMachine(); //new keyword allows for an object to be made of a specific type
 		tm.printTicket();
-		nosPrinted += 1;
-		collections = collections + price;
+		tm.printTicket();
+		tm.printCollections();
+	
+		tm.setPrice(20);
+		tm.setDestination("College Rd");
+		
+		tm.printTicket();
+		tm.printCollections();
+		
+		System.out.print("Enter destination >");
+		Scanner scan = new Scanner(System.in);
+		String dest = scan.next();
+		
+		tm.setDestination(dest);
+		
+		System.out.println("The new destination is " + tm.getDestination()); // printing out of the recently set destination
+		
+		tm.printTicket();
+		tm.printCollections();
+		
+		
+		
+	
 		
 		
 		
