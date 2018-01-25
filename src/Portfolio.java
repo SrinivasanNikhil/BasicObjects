@@ -1,9 +1,5 @@
 
 /**
- * a. Create a class Stock that allows you to make Stock objects
- * 
- * b, Declare 3 attributes for the Stock class/object (use the ones described
- * below) String nameOfStock int numberOfShares double priceOfShare
  * 
  * 
  * 
