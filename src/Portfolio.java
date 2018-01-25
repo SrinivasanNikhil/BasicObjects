@@ -27,7 +27,7 @@ public class Portfolio {
 		 * owned:300, price: 75 name: Linked In, number owned: 500, price: 100
 		 * 
 		 * Print out information about the complete portfolio, i.e. the information
-		 * about all the stocks owned
+		 * about all the stocks owned in the following order amzn,appl,fb,ge,gm,lnkd
 		 * 
 		 * Calculate and print out the value of the entire portfolio i.e sum up the
 		 * value of each of the stocks owned in the portfolio
@@ -35,7 +35,27 @@ public class Portfolio {
 
 		Stock fb = new Stock("Facebook", 300, 75.0);
 		Stock lnkd = new Stock("Linked In", 500, 100.0);
+		
+		System.out.println("Current Portfolio of Stocks :");
+		System.out.println();
+		amzn.printInfo();
+		System.out.println();
+		appl.printInfo();
+		System.out.println();
+		fb.printInfo();
+		System.out.println();
+		ge.printInfo();
+		System.out.println();
+		gm.printInfo();
+		System.out.println();
+		lnkd.printInfo();
+		System.out.println();
+		
+		
 
+		
+		
+		
 	}
 
 }
