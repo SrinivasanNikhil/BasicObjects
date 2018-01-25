@@ -31,7 +31,7 @@ public class Portfolio {
 
 		Stock fb = new Stock("Facebook", 300, 75.0);
 		Stock lnkd = new Stock("Linked In", 500, 100.0);
-		
+
 		System.out.println("Current Portfolio of Stocks :");
 		System.out.println();
 		amzn.printInfo();
@@ -46,12 +46,14 @@ public class Portfolio {
 		System.out.println();
 		lnkd.printInfo();
 		System.out.println();
-		
-		
 
-		
-		
-		
+		double totalPortfolioValue;
+
+		totalPortfolioValue = amzn.calculateStockValue() + appl.calculateStockValue() + fb.calculateStockValue()
+				+ ge.calculateStockValue() + gm.calculateStockValue() + lnkd.calculateStockValue();
+
+		System.out.println("Total portfolio value : " + totalPortfolioValue + " dollars.");
+
 	}
 
 }
