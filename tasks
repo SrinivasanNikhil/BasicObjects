@@ -22,3 +22,16 @@ h. accessor and mutator methods
 	
 	
 i. Constructor, constructing objects
+
+
+Task:
+
+a. Built a new Class called Station
+b. Declare and initialize a ticket machine object with a destination of San Francisco and price of 500
+c. Print out 2 tickets to San Francisco.
+d. Prompt the user to provide input to a new destination to where the user may wish to travel and store their input
+e. Prompt the user to provide input for the price of the ticket to that destination and store their input
+f. Change the destination and price of the TicketMachine to the stored inputs of the user
+g. print out 2 tickets to the new destination with the new price.
+h. Print out the total collections of the ticket machine.
+
