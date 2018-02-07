@@ -1,84 +1,34 @@
-import java.util.Scanner;
 
 public class TicketPrinter {
 
-	
-	/*
-	 *Objects > attributes/fields, actions/methods, methods can be public or accessible to other objects
-	 *giveMeSSN() is not a method you would have
-	 *You don't need to know the logic of methods as long as you can use them and know their input and output
-	 *think of a microwave, you don't need to know its internal operations to use it
-	 *
-	 * Class defined the object, like template, blueprint, it has a definition or a specific structure
-	 * 
-	 * variables can be declared and initialized in the same line
-	 * = is assignment and assigns the variable a value
-	 * 
-	 * Variables can change, but change systematically based on what was in them previously!
-	 * LHS gets the sum of collections and price, its the old value in collections, which was 0 and 
-	 * price which was 10
-	 * 
-	 * names for variables can't be reserved words, like public, private...etc...
-	 * Java supports basic arithmetic operations, PEDMAS
-	 * 
-	 * Line comment and block comment
-	 * 
-	 * Calling methods, methods can only be called on objects that they belong to. methods are public or private, 
-	 * public methods can be called by other objects to get an object to do something
-	 * 
-	 * methods tend to be public, some methods take information/data called parameters or arguments
-	 * to the method, sometimes methods make take more than one piece of information
-	 * 
-	 *  Methods can sometimes return information as well, a method can only return
-	 *  a single value or no value (void). It is part of method declaration.
-	 *  
-	 *  How are objects made? what makes the object and sets it up? the constructor
-	 *  constructor is what is involved when new is used, constructor is like a special method
-	 *  objects stored in a variable/reference variable. 
-	 *  
-	 *  
-	 *  
-	 *  
-	 * 
-	 * 
-	 *
-	 */
 	public static void main(String[] args) {
 	
-	//	int price = 10; //moved to the machine
-	//	int collections = 0; //moved 
-	//	int nosPrinted = 0; // moved 
-		
-
-		TicketMachine tm = new TicketMachine(); //new keyword allows for an object to be made of a specific type
-		tm.printTicket();
-		tm.printTicket();
-		tm.printCollections();
-	
-		tm.setPrice(20);
-		tm.setDestination("College Rd");
-		
-		tm.printTicket();
-		tm.printCollections();
-		
-		System.out.print("Enter destination >");
-		Scanner scan = new Scanner(System.in);
-		String dest = scan.next();
-		
-		tm.setDestination(dest);
-		
-		System.out.println("The new destination is " + tm.getDestination()); // printing out of the recently set destination
-		
-		tm.printTicket();
-		tm.printCollections();
+		//int collections = 0; //move to TicketMachine since it can keep track of tickets sold
+		//int price = 10;// move this to TicketMachine as it should know the price of a ticket
 		
 		
+		TicketMachine tm1;
+		tm1 = new TicketMachine(100,"New York");
 		
-	
+		tm1.printTicket();
+		tm1.printTicket();
+		tm1.printTicket();
+		tm1.printCollections();
 		
 		
+		tm1.setPrice(50);
+		tm1.setDestination("Sandy Springs");
 		
-
+		System.out.println("The cost to travel to " + tm1.getDestination() + " is " + tm1.getPrice() );
+		
+		tm1.printTicket();
+		tm1.printCollections();
+		
+		TicketMachine tm2 = new TicketMachine(200,"San Francisco");
+		tm2.printTicket();
+		tm2.printCollections();
+		
+		
 	}
 
 }

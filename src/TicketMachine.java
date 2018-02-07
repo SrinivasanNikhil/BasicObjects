@@ -1,70 +1,60 @@
-public class TicketMachine {
+
+public class TicketMachine { //class signature, name of the class
 
 	int price;
-	/**
-	 * Have students add a destination
-	 */
 	String destination;
-	int collections;
+	int moneyCollections;
 	
-	public TicketMachine()
+	public TicketMachine(int newValue, String newLocation)
 	{
-		price = 10;
-		destination = "PeachTree";
-		collections = 0;
-	}
-	
-	/**
-	 * Have students build a constructor that takes both cost and destination
-	 */
-	public TicketMachine(int cost, String aDestination)
-	{
-		price = cost;
-		destination = aDestination;
+		price = newValue;
+		destination = newLocation;
+		moneyCollections = 0;
 		
 	}
 	
 	
-	public void printTicket() {
-		System.out.println("***************************");
-		System.out.println("******* MARTA Ticket ******");
-		System.out.println("**** Ticket price: " + price +" *****");
-		System.out.println("******** Red Line *********");
-		System.out.println("****** To " + destination + "*******");
-		System.out.println("***************************");
+	public void printTicket() //method signature, method name, public - accessibility
+	// of the method from external classes
+	{
+		System.out.println("************************");
+		System.out.println("********MARTA********");
+		System.out.println("******RED LINE******");
+		System.out.println("****Cost : " + price + " dollars ****");
+		System.out.println("****Destination : " + destination + " ****");
+		System.out.println("*************************");
 		
-		collections = collections + price;
+		//moneyCollections = moneyCollections + price;
+			
 	}
 	
 	public void printCollections()
 	{
-		System.out.println("Money collected : " + collections);
+		System.out.println("Money Collected : " + moneyCollections);
+		
+		
 	}
 	
-	public void setPrice(int cost)
+	public void setPrice(int newValue)//newValue is a parameter and price is set to this parameter
 	{
-		price = cost;
+		price = newValue;
+	}
+	
+	public void setDestination(String bananas)
+	{
+		destination = bananas;
 	}
 	
 	public int getPrice()
 	{
+		
 		return price;
 	}
-
-	/**
-	 * Students build this getter and setter methods for destination
-	 */
 	
-	public String getDestination() {
+	public String getDestination()
+	{
 		return destination;
 	}
 
-	public void setDestination(String dest) {
-		destination = dest;
-	}
-	
-	
-	
-	
-
 }
+
