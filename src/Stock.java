@@ -1,4 +1,6 @@
-
+/**
+this is a comment
+*/
 public class Stock {
 
 	String stockName;
